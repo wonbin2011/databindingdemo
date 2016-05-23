@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <import type="com.example.wonbin.databindingdemo.sample.attributesetter.AttributeSetterActivity"/>
+        <import type="com.example.wonbin.databindingdemo.utils.Randoms"/>
+        <variable
+            name="imageUrl"
+            type="String"/>
+        <variable
+            name="activity"
+            type="AttributeSetterActivity"/>
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!-- automatic setters demo:  the namespace for the attributes does not matter,
+        only the attribute itself. For an attribute, data binding tries to find the method
+        setAttibute.-->
+        <com.example.wonbin.databindingdemo.view.NameCard
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginEnd="@dimen/largePadding"
+            android:layout_marginLeft="@dimen/largePadding"
+            android:layout_marginRight="@dimen/largePadding"
+            android:layout_marginStart="@dimen/largePadding"
+            android:gravity="center"
+            app:age="27"
+            app:firstName="@{@string/firstName}"
+            app:lastName="@{@string/lastName}"
+            />
+        <com.liangfeizc.avatarview.AvatarView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:error="@{@drawable/error}"
+            app:imageUrl="@{imageUrl}"
+            app:onClickListener="@{activity.avatarClickListener}"/>
+    </LinearLayout>
+
+</layout>

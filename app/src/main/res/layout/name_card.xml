@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  merge  shem me gui-->
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:id="@+id/fn_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" ◉ "/>
+    <TextView
+        android:id="@+id/ln_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</merge>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bind="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="user"
+            type="com.example.wonbin.databindingdemo.model.User"/>
+        <variable
+            name="contact"
+            type="com.example.wonbin.databindingdemo.model.Contact"/>
+    </data>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <include
+            layout="@layout/user"
+            bind:user="@{user}"/>
+        <include
+            layout="@layout/contact"
+            bind:contact="@{contact}"/>
+    </LinearLayout>
+</layout>
