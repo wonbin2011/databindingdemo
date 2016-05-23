@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/home/wonbin/AndroidStudioProjects/DataBindingDemo/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="27f679add40bba2dec0ca9f46c7108ec138c7aa7">
+        <dex dex="/home/wonbin/AndroidStudioProjects/DataBindingDemo/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_e8e8250fe2e1bf86a619bb6db96f109c10eecd63/classes.dex" />
+    </item>
+
+</items>
